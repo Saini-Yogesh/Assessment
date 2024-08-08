@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./ASS.css" />
+  </head>
+  <body>
+    <!-- heading  -->
+    <h1>Employee Management</h1>
+
+    <!-- employee form -->
+    <div id="add-employ-form">
+      <h2>Add New Employee</h2>
+      <form id="employee-form">
+        <div class="form-input">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-input">
+          <label for="salary">Salary:</label>
+          <input type="number" id="salary" required />
+        </div>
+        <div class="form-input">
+          <button type="submit">Add Employee</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Hidden form for editing employee details -->
+    <div id="edit-form-container" style="display: none">
+      <h2>Edit Employee</h2>
+      <div id="edit-form">
+        <div class="form-input">
+          <label for="edit-name">Name:</label>
+          <input type="text" id="edit-name" required />
+        </div>
+        <div class="form-input">
+          <label for="edit-salary">Salary:</label>
+          <input type="text" id="edit-salary" required />
+        </div>
+        <div class="form-input form-input-small-screen">
+          <button id="update-button">Update Employee</button>
+          <button id="cancel-button">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- list of employee -->
+    <div id="employee-list-header">
+      <p>Name</p>
+      <p>Salary</p>
+      <p>Actions</p>
+    </div>
+    <div id="employee-list"></div>
+
+    <script src="./Ass.js"></script>
+  </body>
+</html>
